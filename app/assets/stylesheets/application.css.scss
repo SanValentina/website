@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+// @import 'posts_projects';
+@import 'normalize';
+@import 'welcome';
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper_padding{
+  padding: 4em;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  }
+
+#main_navigation {
+  padding: 2.5em 5%;
+  .name {
+    font-weight:700;
+    font-size: .8em;
+    letter-spacing:4px;
+    text-transform: uppercase;
+    border: 2px solid #E9E9E9;
+    padding: 0.75em 1rem;
+    text-decoration:none;
+    color: $dark;
+    float:left;
+  }
+  nav{
+    float: right;
+    padding-top: .9rem;
+    a {
+      text-decoration:none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+#page_title{
+  font-weight:400;
+  text-align:center;
+  border-bottom: 1px solid $border;
+
+}
+
+#main_footer{
+  padding: 2.5em 5%;
+  border-top: 1px solid;
+  .copyright {
+    float:left;
+    font-size: .9rem;
+    margin:0;
+  }
+  nav {
+    float: right;
+    i{
+      color: red;
+      margin-left: 1em;
+      padding-top: .2em;
+    }
+  }
+
+
+}
+

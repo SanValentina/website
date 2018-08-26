@@ -1,0 +1,24 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 homepage_content"></div>
+    <h2>About</h2>
+    <hr>
+    <p>I am an architec/dev &amp; dev living in London </p>
+    <p> By day i Lorem ipsum dolor amet scenester you probably haven't heard of them master cleanse, yuccie photo booth leggings marfa fam irony pickled. Scenester mlkshk banh mi, aesthetic shaman quinoa PBR&B hella squid bushwick. Pug mixtape narwhal affogato la croix cred portland shaman wayfarers VHS blue bottle raclette. Beard shaman vexillologist, irony offal echo park vape fam cold-pressed unicorn pok pok brunch DIY. Live-edge next level fashion axe occupy meh.</p>
+  </div>
+
+  <div class="col-2 homepage_content">
+    <h2>Stuff I've built</h2>
+    <hr>
+
+    <% @posts.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post %></a></h3>
+
+    <% end %>
+  </div>
+
+  <div class="col-3 homepage_content">
+    <h2>Contact</h2>
+    <hr>
+    <p>text</p>
+  </div>
+</div>
