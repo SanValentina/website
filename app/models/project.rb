@@ -1,6 +1,4 @@
  class Project < ApplicationRecord
-  def index
-    @projects = Project.all.order("created_at desc")
-  end
-
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 end
