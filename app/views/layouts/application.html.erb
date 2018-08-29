@@ -3,10 +3,10 @@
   <head>
     <title>Valentina Antollini</title>
 
-    <link rel="stylesheet" href="css/application.css">
        <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/application.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -27,9 +27,10 @@
     <header id="main_navigation" class="clearfix" >
       <%= link_to "Valentina Antollini", root_path, class:"name" %>
       <nav>
-        <a href="articles.html">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <%= link_to "Articles", posts_path %>
+        <%= link_to "Projects", projects_path %>
+
+
       </nav>
     </header>
 
