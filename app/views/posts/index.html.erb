@@ -1,17 +1,17 @@
-  <head>
-    <title>Valentina Antollini Architect, Dev</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <h1 id="page_title">Stuff I've written</h1>
+  <div id="post-wrapper" class="skinny-wrapper">
+    <%= @post.each do |post| %>
+    <div class="post">
+      <p class="date"><%= post.created_at.strftime('%A, %b, %d') %></p>
+      <h2><%= link_to post.title, post %></h2>
+      <hr>
+    </div>
+    <% end %>
+  </div>
 
-  </head>
-  <body>
-
-    <footer id="main_footer">
-      <p class="copyright">&copy; 2018 Valentina Antollini</p>
-      <nav>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </nav>
-    </footer>
-
-  </body>
+  <div class="pagination"></div>
+    <span class="previous_page disabled">Previous</span>
+    <em class="current">1</em>
+    <a rel="next" href="#">2</a>
+    <a class="next-page" href="#">Next</a>
+  </div>
