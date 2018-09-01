@@ -1,4 +1,4 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+ <div id="post_show_content" class="skinny_wrapper wrapper_padding">
   <header>
     <p class="date"><%= @project.created_at.strftime('%A, %b, %d') %></p>
     <h1><%= @project.title %></h1>
@@ -12,8 +12,12 @@
     </div>
   </div>
 
-  <%= link_to "Edit", edit_project_path(@project) %>
+
+  <% if user_signed_in? %>
+    <div id="admin_links">
+      <%= link_to "Edit", edit_project_path(@project) %>
   <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "are you sure?" } %>
+  <% end %>
   <hr>
 </div>
 
