@@ -24,19 +24,19 @@
           <img src="http://placehold.it/800x800" class="responsive-image">
         </div>
 </div>
-<!--
 
-        <div class="posts" id="post_section">
-            <% @projects.each do |project| %>
-                <div class="post">
-                    <img class="image" src="<%= project %>">
-                    <div class="title">
-                        <h2><%= link_to project.title, project %></h2>
-                    </div>
-                </div>
-            <% end %>
+
+        <div class="projects" id="project_section">
+          <% @projects.each do |project| %>
+            <a href="project(project)"> <%= image_tag(project.image.profile_size.url) %></a>
+            <h2><%= link_to project.title, project %></h2>
+          <% end %>
         </div>
--->
+
+
+
+
+
 
 
 

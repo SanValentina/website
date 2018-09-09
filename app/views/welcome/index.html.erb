@@ -14,28 +14,20 @@
     <% end %>
   </div>
 
-
-
-
- <!--  <div class="col-3 homepage_content">
-    <h2>Stuff I've Written</h2>
-    <hr>
-
-    <% @projects.each do |project| %>
-      <h3><a href="#"><%= link_to project.title, project %></a></h3>
-      <p class="date"><%= project.created_at.strftime("%A, %b, %d") %></p>
-    <% end %>
-  </div> -->
-
-</div>
-
+-->
 
 
 <div class="container">
   <div class="grid">
     <div class="cell">
-      <div class="responsive-image">
-      <%= image_tag 'view1.jpg' %>
+
+          <% @projects.each do |project| %>
+            <h2><%= link_to project.title, project %></h2>
+              <h3><a href=" "> <%= image_tag 'view1.jpg' %></h3></a>
+             <h2><%= link_to project.title, project %></h2>
+          <% end %>
+
+
       </div>
     </div>
     <div class="cell">
