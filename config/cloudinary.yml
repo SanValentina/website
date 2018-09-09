@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dtdt4tofz
+  api_key: '272885921432356'
+  api_secret: 95knxXFJX0zeJEEjCvKYR7x8zOQ
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dtdt4tofz
+  api_key: '272885921432356'
+  api_secret: 95knxXFJX0zeJEEjCvKYR7x8zOQ
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dtdt4tofz
+  api_key: '272885921432356'
+  api_secret: 95knxXFJX0zeJEEjCvKYR7x8zOQ
+  enhance_image_tag: true
+  static_image_support: false

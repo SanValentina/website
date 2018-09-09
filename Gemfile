@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.4'
 
+
+gem 'cloudinary'
+
+
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.4'
 gem 'friendly_id', '~> 5.1'

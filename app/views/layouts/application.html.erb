@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href="/">
     <title>Valentina Antollini</title>
 
+    <link rel="stylesheet" href="css/application.css">
        <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/application.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -27,13 +28,14 @@
     <header id="main_navigation" class="clearfix" >
       <%= link_to "Valentina Antollini", root_path, class:"name" %>
       <nav>
-        <%= link_to "Articles", posts_path %>
-        <%= link_to "Projects", projects_path %>
-        <%= link_to "Contacts", new_contact_path %>
+        <%= link_to "WORK", projects_path %>
+        <%= link_to "TESTS", posts_path %>
+        <a href="#">ABOUT</a>
+        <%= link_to "CONTACT", new_contact_path %>
+
         <% if user_signed_in? %>
         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
         <% end %>
-
 
       </nav>
     </header>

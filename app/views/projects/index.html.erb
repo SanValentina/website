@@ -1,12 +1,46 @@
-  <h1 id="page_title">Stuff I've Built</h1>
+<!--   <h1 id="page_title">Projects</h1> -->
 
-  <div id="post-wrapper" class="skinny-wrapper">
-    <% @projects.each do |project| %>
-    <div class="post">
-      <p class="date"><%= project.created_at.strftime('%A, %b, %d') %></p>
-      <h2><%= link_to project.title, project %></h2>
-      <hr>
+  <div class="main-content">
+    <!-- <div class="blog-list">
+
+      <article> </article>
+    </div> -->
+    <div class="grid">
+
+
+        <div class="cell">
+        <h5 class="cell-title">Digital</h5>
+
+          <img src="http://placehold.it/800x800" class="responsive-image">
+        </div>
+
+        <div class="cell">
+        <h5 class="cell-title">Illustration</h5>
+          <img src="http://placehold.it/800x800" class="responsive-image">
+        </div>
+
+        <div class="cell">
+         <h5 class="cell-title">Architecture</h5>
+          <img src="http://placehold.it/800x800" class="responsive-image">
+        </div>
+</div>
+<!--
+
+        <div class="posts" id="post_section">
+            <% @projects.each do |project| %>
+                <div class="post">
+                    <img class="image" src="<%= project %>">
+                    <div class="title">
+                        <h2><%= link_to project.title, project %></h2>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+-->
+
+
+
+<!-- for each project, print the title, print the card with th eimage of the project, and hyperlink the card and the image  -->
+          <hr>
     </div>
-    <% end %>
   </div>
-

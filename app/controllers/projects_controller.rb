@@ -18,6 +18,17 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def store
+      # upload image to cloudinary
+      @image = Cloudinary::Uploader.upload(params[:media])
+      # create a new post object and save to db
+      @project = Project.new({:title => params[:title]})
+      @project.save
+      # trigger an event with pusher
+      redirect_to('/')
+  end
+
+
   def show
   end
 
