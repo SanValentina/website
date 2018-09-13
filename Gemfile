@@ -78,3 +78,7 @@ group :production do
   gem 'pg';
   gem 'rails_12factor'
 end
+
+#gems for image management
+gem 'carrierwave'
+gem 'mini_magick'
